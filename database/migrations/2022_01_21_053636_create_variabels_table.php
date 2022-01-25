@@ -13,8 +13,10 @@ class CreateVariabelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('variabels', function (Blueprint $table) {
+        Schema::create('variabel', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_variabel', 50)->nullable();
+            $table->string('field_akses', 50)->nullable();
             $table->timestamps();
         });
     }

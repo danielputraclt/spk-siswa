@@ -13,8 +13,14 @@ class CreateDataSiswasTable extends Migration
      */
     public function up()
     {
-        Schema::create('data_siswas', function (Blueprint $table) {
+        Schema::create('data_siswa', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->decimal('nilai_rapor', $precision=4, $scale = 2);
+            $table->decimal('absensi', $precision=4, $scale = 2);
+            $table->decimal('kepribadian', $precision=4, $scale = 2);
+            $table->decimal('ekstrakurikuler', $precision=4, $scale = 2);
+            
             $table->timestamps();
         });
     }

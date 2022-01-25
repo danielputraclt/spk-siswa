@@ -13,8 +13,11 @@ class CreateHasilFuzziesTable extends Migration
      */
     public function up()
     {
-        Schema::create('hasil_fuzzies', function (Blueprint $table) {
+        Schema::create('hasil_fuzzy', function (Blueprint $table) {
             $table->id();
+            $table->integer('id_himpunan')->nullable();
+            $table->integer('id_siswa')->nullable();
+            $table->float('hasil_fuzzy')->nullable();
             $table->timestamps();
         });
     }

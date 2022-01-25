@@ -97,20 +97,22 @@
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Data Siswa</h1>
+                    <h1 class="h3 mb-0 text-gray-800">Data Absensi</h1>
                     <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fa fa-plus fa-sm text-white-50"></i> Tambah Data Siswa</a>
+                            class="fa fa-cog fa-sm text-white-50"></i> Edit Data Absensi</a>
                 </div>
 
                 <table class="table text-dark">
                     <thead>
                         <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">Nama</th>
-                            <th scope="col">Nilai</th>
-                            <th scope="col">Absensi</th>
-                            <th scope="col">Kepribadian</th>
-                            <th scope="col">Ekstrakurikuler</th>
+                            <th scope="col" rowspan="2" class="align-middle">No</th>
+                            <th scope="col" rowspan="2" class="align-middle">Nama</th>
+                            <th scope="col" colspan="3" class="text-center">Derajat Keanggotaan Absensi</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Rendah</th>
+                            <th scope="col">Sedang</th>
+                            <th scope="col">Tinggi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -120,7 +122,6 @@
                             <td>85</td>
                             <td>80</td>
                             <td>85</td>
-                            <td>70</td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -128,7 +129,6 @@
                             <td>80</td>
                             <td>70</td>
                             <td>75</td>
-                            <td>70</td>
                         </tr>
 
                     </tbody>

@@ -17,3 +17,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard.index');
 });
+
+Route::get('/tambahdata', function () {
+    return view('dashboard.tambahsiswa');
+});
+
+Route::get('/nilai', function () {
+    return view('dashboard.nilai');
+});
+
+Route::get('/absensi', function () {
+    return view('dashboard.absensi');
+});
+
+Route::get('/kepribadian', function () {
+    return view('dashboard.kepribadian');
+});
+
+Route::get('/ekstrakurikuler', function () {
+    return view('dashboard.ekstra');
+});

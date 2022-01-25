@@ -13,8 +13,14 @@ class CreateHimpunansTable extends Migration
      */
     public function up()
     {
-        Schema::create('himpunans', function (Blueprint $table) {
+        Schema::create('himpunan', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_himpunan')->nullable();
+            $table->float('bawah', 10, 2)->nullable();
+            $table->float('tengah', 10, 2)->nullable();
+            $table->float('atas', 10, 2)->nullable();
+            $table->tinyInteger('kelompok')->nullable();
+            $table->string('keterangan', 200)->nullable();
             $table->timestamps();
         });
     }
